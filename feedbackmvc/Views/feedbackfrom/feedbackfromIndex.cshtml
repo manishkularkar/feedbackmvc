@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "feedbackfromIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/pages/Js/feedbackmvc.js"></script>
+<h2> Feedback from  </h2>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/pages/Js/feedbackmvc.js"></script>
+<input type="hidden" id="hdnId" />
+<label> Name </label>
+<input type="text" placeholder="Enter name" id="txtName" class="form-control" />
+<label> contact </label>
+<input type="text" placeholder="Enter contact" id="txtContact" class="form-control" />
+<label> city </label>
+<input type="text" placeholder="Enter city" id="txtCity" class="form-control" />
+<label> email </label>
+<input type="text" placeholder="Enter email" id="txtEmail" class="form-control" />
+<label> feedback1 </label>
+<input type="text" placeholder="Enter feedback1" id="txtFeedback1" class="form-control" />
+
+<button type="submit" onclick="savefeedbackfrom()" class="btn btn-primary">Feedback</button>
+
+
+<table id="feedback" class="table table-bordered">
+    <thead>
+        <tr>
+            <th> Id</th>
+            <th> Name</th>
+            <th>contact</th>
+            <th>city </th>
+            <th>email </th>
+            <th> feedback1</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>

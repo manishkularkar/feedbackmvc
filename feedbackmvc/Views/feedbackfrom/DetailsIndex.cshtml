@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "DetailsIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/pages/Js/feedbackmvc.js"></script>
+<h2>DetailsIndex</h2>
+
+<input type="hidden" value="@ViewBag.Id"id="hdnId"/>
+
+<div class="container">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-6">
+                <label> Id</label>
+                <span id="hdnId"> </span>
+                <label><b> Name : </b> </label>
+                <span id="txtName"> </span>
+                <label><b> Contact : </b> </label>
+                <span id="txtContact"> </span>
+                
+            </div>
+            <div class="col-sm-6">
+                <label> <b>City:  </b></label>
+                <span id="txtCity"> </span>
+                <label><b>  Email: </b></label>
+                <span id="txtEmail"> </span>
+                <label> <b>Feedback: </b></label>
+                <span id="txtFeedback1"> </span>
+            </div>
+        </div>
+    </div>
+</div>
