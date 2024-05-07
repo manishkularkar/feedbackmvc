@@ -18,7 +18,7 @@ namespace feedbackmvc.Models
 
         public string Savefeedbackfrom(FeedbackModel model)
         {
-            var msg = "Data Saved Sucessfully!";
+            var msg = "Sucessfully!";
             ghrceEntities db = new ghrceEntities();
             var reg = db.feedbacks.Where(p => p.Id == model.Id).FirstOrDefault();
             if (model.Id == 0)
